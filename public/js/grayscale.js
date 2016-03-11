@@ -67,7 +67,7 @@ function init() {
             position: myLatLng,
             title: "I live here!",
             animation: google.maps.Animation.DROP,
-            draggable: true,
+            draggable: false,
             map: map,
             icon: image,
         });
