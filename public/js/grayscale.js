@@ -63,9 +63,18 @@ function init() {
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = '/images/map-marker.png';
     var myLatLng = new google.maps.LatLng(33.7400, -118.2900);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image
-    });
+    var marker = new google.maps.Marker({
+            position: myLatLng,
+            title: "I live here!",
+            animation: google.maps.Animation.DROP,
+            draggable: true,
+            map: map,
+            icon: image,
+        });
+
+
+
+    google.maps.event.addListener(marker, 'click', function(){
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        });
 }
