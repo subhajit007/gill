@@ -161,6 +161,9 @@
     <script src="js/grayscale.js"></script>
 
     <script language="javascript" type="text/javascript">
+    $(window).unload(function() {
+     $('.cssload-loader').append(html);
+  });
      $(window).load(function() {
      $('.cssload-loader').hide();
   });
