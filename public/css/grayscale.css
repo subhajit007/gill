@@ -478,6 +478,9 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     text-align: center;
     position: absolute;
     left: 50%;
+    top:0;
+    bottom: 0;
+    margin: auto;
     transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
