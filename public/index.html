@@ -32,7 +32,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<div class="cssload-loader">Loading..</div>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -173,6 +173,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <script language="javascript" type="text/javascript">
+     $(window).load(function() {
+     $('.cssload-loader').hide();
+  });
+    </script>
+
 
 </body>
 
